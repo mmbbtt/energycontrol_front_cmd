@@ -10,6 +10,7 @@ public enum ECmdMessagesKeys
 	TextMenuLoadEE2ConsumptiosFromCsv("TextMenuLoadEE2ConsumptiosFromCsv"),
 	TextMenuLoadBillNaturgyFromCsv("TextMenuLoadBillNaturgyFromCsv"),
 	TextMenuGenerateGnuPlotFileVerifiedBill("TextMenuGenerateGnuPlotFileVerifiedBill"),
+	TextMenuCheckBill("TextMenuCheckBill"),
 	InputDateHourFrom("InputDateHourFrom"),
 	InputDateHourTo("InputDateHourTo"),
 	InputCsvFileName("InputCsvFileName"),

@@ -133,6 +133,20 @@ public class MainMenu
 				);
 			
 			menu.addMenuItem(6, miGenerateGnuPlotFileVerifiedBillCommand);
+			
+			//Menu item 7: Comprobar una factura
+			textMenuItem = this.resourceBundleReader.getLocalizedMessage(
+				 ECmdMessagesKeys.TextMenuCheckBill.stringValue
+				,new Object[] {"7"}
+				);
+			
+			MenuItem miCheckBillCommand = new MenuItem(
+				 new CheckBillCommand(this.resourceBundleReader, menu.getScanner(), this.backService)
+				,textMenuItem
+				,"7"
+				);
+			
+			menu.addMenuItem(7, miCheckBillCommand);
 		}
 		catch(BussinesException be)
 		{
