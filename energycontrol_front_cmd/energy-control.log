@@ -11004,3 +11004,9 @@ Caused by: java.util.IllegalFormatConversionException: d != java.lang.Double
 [2023-09-12 20:30:29] [ DEBUG] [PropertiesFileReader:56] Fichero de propiedades leido.
 [2023-09-12 20:30:29] [ DEBUG] [logging:38] Logging Provider: org.jboss.logging.Log4jLoggerProvider
 [2023-09-12 20:30:36] [ DEBUG] [Main:42] Saliendo de Main
+[2024-09-28 11:42:22] [ DEBUG] [Main:22] Entrando en Main
+[2024-09-28 11:42:22] [ DEBUG] [PropertiesFileReader:44] Leyendo el fichero de propiedades energycontrol-front-cmd.properties ...
+[2024-09-28 11:42:22] [ DEBUG] [PropertiesFileReader:56] Fichero de propiedades leido.
+[2024-09-28 11:42:22] [ DEBUG] [PropertiesFileReader:44] Leyendo el fichero de propiedades energycontrol-back.properties ...
+[2024-09-28 11:42:22] [ DEBUG] [PropertiesFileReader:56] Fichero de propiedades leido.
+[2024-09-28 11:42:22] [ DEBUG] [logging:38] Logging Provider: org.jboss.logging.Log4jLoggerProvider

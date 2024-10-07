@@ -120,33 +120,47 @@ public class MainMenu
 			
 			menu.addMenuItem(5, miLoadEfergyE2ConsumptionsFromCsvCommand);
 			
-			//Menu item 6: Generar archivo de datos para GnuPlot
+			//Menu item 6: cargar consumos UFD
+			textMenuItem = this.resourceBundleReader.getLocalizedMessage(
+				 ECmdMessagesKeys.TextMenuLoadUdfConsumptiosFromCsv.stringValue
+				,new Object[] {"6"}
+				);
+			
+			MenuItem miLoadUfdConsumptionsFromCsvCommand = new MenuItem(
+				 new LoadUfdConsumptionsFromCsvCommand(this.resourceBundleReader, menu.getScanner(), this.backService)
+				,textMenuItem
+				,"6"
+				);
+			
+			menu.addMenuItem(6, miLoadUfdConsumptionsFromCsvCommand);
+			
+			//Menu item 7: Generar archivo de datos para GnuPlot
 			textMenuItem = this.resourceBundleReader.getLocalizedMessage(
 				 ECmdMessagesKeys.TextMenuGenerateGnuPlotFileVerifiedBill.stringValue
-				,new Object[] {"6"}
+				,new Object[] {"7"}
 				);
 			
 			MenuItem miGenerateGnuPlotFileVerifiedBillCommand= new MenuItem(
 				 new GenerateGnuPlotFileVerifiedBillCommand(this.resourceBundleReader, menu.getScanner(), this.backService)
 				,textMenuItem
-				,"6"
+				,"7"
 				);
 			
-			menu.addMenuItem(6, miGenerateGnuPlotFileVerifiedBillCommand);
+			menu.addMenuItem(7, miGenerateGnuPlotFileVerifiedBillCommand);
 			
-			//Menu item 7: Comprobar una factura
+			//Menu item 8: Comprobar una factura
 			textMenuItem = this.resourceBundleReader.getLocalizedMessage(
 				 ECmdMessagesKeys.TextMenuCheckBill.stringValue
-				,new Object[] {"7"}
+				,new Object[] {"8"}
 				);
 			
 			MenuItem miCheckBillCommand = new MenuItem(
 				 new CheckBillCommand(this.resourceBundleReader, menu.getScanner(), this.backService)
 				,textMenuItem
-				,"7"
+				,"8"
 				);
 			
-			menu.addMenuItem(7, miCheckBillCommand);
+			menu.addMenuItem(8, miCheckBillCommand);
 		}
 		catch(BussinesException be)
 		{
